@@ -1,0 +1,213 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Korisnik\\my-playwright-project\\playwright.config.ts",
+    "rootDir": "C:/Users/Korisnik/my-playwright-project/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 1,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "test-report/html-report",
+          "open": "always"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-report/json/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Korisnik/my-playwright-project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Korisnik/my-playwright-project/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.47.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "LoginTest.spec.ts",
+      "file": "LoginTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Test with valid data",
+          "file": "LoginTest.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Successful Log in: kliker86",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 11572,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-10-09T08:34:39.865Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "539b1c6d7fcc511d6019-f058ef63af061c9839b7",
+              "file": "LoginTest.spec.ts",
+              "line": 6,
+              "column": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "PerformanceMetrics.spec.ts",
+      "file": "PerformanceMetrics.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Performance Metrics",
+          "file": "PerformanceMetrics.spec.ts",
+          "line": 4,
+          "column": 7,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Login Test with valid data response time",
+              "file": "PerformanceMetrics.spec.ts",
+              "line": 22,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Login action response time' kliker86",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 0,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "status": "failed",
+                          "duration": 808445,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('tcommon-tile-header[tcommon-title=\\'My Profile\\']')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('tcommon-tile-header[tcommon-title=\\'My Profile\\']')\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('tcommon-tile-header[tcommon-title=\\'My Profile\\']')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('tcommon-tile-header[tcommon-title=\\'My Profile\\']')\u001b[22m\n\n    at LoginPage.verifyMyProfileinHomePage (C:\\Users\\Korisnik\\my-playwright-project\\src\\pages\\LoginPage.ts:40:59)\n    at C:\\Users\\Korisnik\\my-playwright-project\\src\\tests\\LoginTest.spec.ts:9:13",
+                            "location": {
+                              "file": "C:\\Users\\Korisnik\\my-playwright-project\\src\\pages\\LoginPage.ts",
+                              "column": 59,
+                              "line": 40
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:40\n\n\u001b[0m \u001b[90m 38 |\u001b[39m     \u001b[36masync\u001b[39m verifyMyProfileinHomePage() {\n \u001b[90m 39 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForElement(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmyProfileLocator)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m          expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmyProfileLocator))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m     }\n \u001b[90m 42 |\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36masync\u001b[39m verifyButtonDisabled() {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Korisnik\\my-playwright-project\\src\\pages\\LoginPage.ts",
+                                "column": 59,
+                                "line": 40
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('tcommon-tile-header[tcommon-title=\\'My Profile\\']')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('tcommon-tile-header[tcommon-title=\\'My Profile\\']')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:40\n\n\u001b[0m \u001b[90m 38 |\u001b[39m     \u001b[36masync\u001b[39m verifyMyProfileinHomePage() {\n \u001b[90m 39 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForElement(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmyProfileLocator)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m          expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmyProfileLocator))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m     }\n \u001b[90m 42 |\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36masync\u001b[39m verifyButtonDisabled() {\u001b[0m\n\n\u001b[2m    at LoginPage.verifyMyProfileinHomePage (C:\\Users\\Korisnik\\my-playwright-project\\src\\pages\\LoginPage.ts:40:59)\u001b[22m\n\u001b[2m    at C:\\Users\\Korisnik\\my-playwright-project\\src\\tests\\LoginTest.spec.ts:9:13\u001b[22m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Korisnik\\my-playwright-project\\src\\pages\\BasePage.ts",
+                                "column": 25,
+                                "line": 18
+                              },
+                              "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://my-stage.tractive.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\BasePage.ts:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36masync\u001b[39m navigateToBasePage() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m`${this.baseUrl}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m     }\n \u001b[90m 20 |\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36masync\u001b[39m waitForElement(selector\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m timeout \u001b[33m=\u001b[39m \u001b[35m50000\u001b[39m) {\u001b[0m\n\n\u001b[2m    at BasePage.navigateToBasePage (C:\\Users\\Korisnik\\my-playwright-project\\src\\pages\\BasePage.ts:18:25)\u001b[22m\n\u001b[2m    at Object.page (C:\\Users\\Korisnik\\my-playwright-project\\src\\tests\\BaseTest.ts:15:24)\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2024-10-09T08:34:51.589Z",
+                          "attachments": [],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Korisnik\\my-playwright-project\\src\\pages\\LoginPage.ts",
+                            "column": 59,
+                            "line": 40
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "dafcd104f6db200e2680-99682c3ca5c81ba20772",
+                  "file": "PerformanceMetrics.spec.ts",
+                  "line": 24,
+                  "column": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "message": "\u001b[31mTesting stopped early after 1 maximum allowed failures.\u001b[39m"
+    }
+  ],
+  "stats": {
+    "startTime": "2024-10-09T08:34:39.391Z",
+    "duration": 820779.409,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
