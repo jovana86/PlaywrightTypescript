@@ -9,7 +9,7 @@ const config: PlaywrightTestConfig = {
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 4 : undefined,
   reporter: [
     ['html', { outputFolder: 'test-report/html-report', open: 'always' }],
     ['json', { outputFile: 'test-report/json/test-results.json' }]
