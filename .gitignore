@@ -6,12 +6,12 @@ dist/
 out/
 build/
 
-# Playwright artifacts
-*.tsbuildinfo
-playwright-report/
-test-results/
-screenshots/
-videos/
+# # Playwright artifacts
+# *.tsbuildinfo
+# playwright-report/
+# test-results/
+# screenshots/
+# videos/
 
 # Environment files
 .env
